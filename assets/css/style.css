@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: #b6a291;
+    color: #765D49;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body>h1{
+    letter-spacing: 3px;
+    padding-left: 10%;
+}
+
+nav{
+    background: #765D49;
+}
+
+nav ul{
+    padding: 20px 10% 20px;
+}
+
+nav ul li{
+    display: inline-block;
+    width: 200px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #b6a291;
+}
+
+nav ul li a:hover{
+    text-decoration: underline;
+}
+
+section{
+    border-bottom: 1px solid #765D49;
+    padding: 100px 10%;
+    text-align: center;
+}
+
+section img{
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
