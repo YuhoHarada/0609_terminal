@@ -48,3 +48,15 @@ section img{
     margin: 0 auto;
 }
 
+div{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    background: #496276;
+    padding: 20px;
+}
+
+div a{
+    text-decoration: none;
+    color: #b6a291;
+}
