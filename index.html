@@ -7,24 +7,47 @@
     <title>Terminal Cheat Sheet</title>
 </head>
 <body>
-    <h1 id="pagetop">Terminal Cheat Sheet</h1>
-    <nav>
-        <ul>
-            <li><a href="#pwd">pwd</a></li>
-            <li><a href="#cd">cd</a></li>
-            <li><a href="#ls">ls</a></li>
-            <li><a href="#mkdir">mkdir</a></li>
-            <li><a href="#touch">touch</a></li>
-            <li><a href="#rm">rm</a></li>
-            <li><a href="#rm_r">rm -r</a></li>
-            <li><a href="#rmdir">rmdir</a></li>
-            <li><a href="#mvr">mv ...Rename</a></li>
-            <li><a href="#mvo">mv ...Other Directory</a></li>
-            <li><a href="#cps">cp ...Same Directory</a></li>
-            <li><a href="#cpo">cp ...Other Directory</a></li>
-        </ul>
-    </nav>
-    <div><a href="#pagetop">Page top</a></div>
+    <header>
+        <h1 id="pagetop">Terminal Cheat Sheet</h1>
+        <label for="label1">Terminal</label>
+        <input type="checkbox" id="label1">
+        <div>
+            <ul>
+                <li><a href="#pwd">pwd</a></li>
+                <li><a href="#cd">cd</a></li>
+                <li><a href="#ls">ls</a></li>
+                <li><a href="#mkdir">mkdir</a></li>
+                <li><a href="#touch">touch</a></li>
+                <li><a href="#rm">rm</a></li>
+                <li><a href="#rm_r">rm -r</a></li>
+                <li><a href="#rmdir">rmdir</a></li>
+                <li><a href="#mvr">mv ...Rename</a></li>
+                <li><a href="#mvo">mv ...Other Directory</a></li>
+                <li><a href="#cps">cp ...Same Directory</a></li>
+                <li><a href="#cpo">cp ...Other Directory</a></li>
+            </ul>
+        </div>
+        <label for="label2">Git</label>
+        <input type="checkbox" id="label2">
+        <div>
+            <ul>
+                <li><a href="#ginit">git init</a></li>
+                <li><a href="#gstatus">git status</a></li>
+                <li><a href="#gadd">git add</a></li>
+                <li><a href="#gcommit">git commit</a></li>
+                <li><a href="#glog">git log</a></li>
+                <li><a href="#glogone">git log --oneline</a></li>
+                <li><a href="#gdiff">git diff</a></li>
+                <li><a href="#gbranch">git branch</a></li>
+                <li><a href="#gdelete">git branch -d</a></li>
+                <li><a href="#gcheck">git checkout</a></li>
+                <li><a href="#gmerge">git merge</a></li>
+                <li><a href="#gpush">git push</a></li>
+                <li><a href="#gpull">git pull</a></li>
+            </ul>
+        </div>
+    </header>
+    <div id="toTop"><a href="#pagetop">Page top</a></div>
     <section id="pwd">
         <h1>pwd</h1>
         <img src="assets/img/pwd.png" alt="">
@@ -84,6 +107,72 @@
         <h1>cp (File) (Directory)</h1>
         <img src="assets/img/cp2.png" alt="">
         <p>Copy (File) to (Directory)</p>
+    </section>
+    <section id="ginit">
+        <h1>git init</h1>
+        <img src="assets/img/git_init.png" alt="">
+        <p>Create empty Git repo in specified directory.</p>
+    </section>
+    <section id="gstatus">
+        <h1>git status</h1>
+        <img src="assets/img/git_status.png" alt="">
+        <p>List which files are staged, unstaged, and untracked.</p>
+    </section>
+    <section id="gadd">
+        <h1>git add (directory)</h1>
+        <img src="assets/img/git_add.png" alt="">
+        <p>Stage all changes in (directory) for the next commit.</p>
+    </section>
+    <section id="gcommit">
+        <h1>git commit -m (name)</h1>
+        <img src="assets/img/git_commit.png" alt="">
+        <p>Commit the staged snapshot, but instead of launching a text editor, use (name) as the commit message.</p>
+    </section>
+    <section id="glog">
+        <h1>git log</h1>
+        <img src="assets/img/git_log.png" alt="">
+        <p>Display the entire commit history using the default format. For customization see additional options.</p>
+    </section>
+    <section id="glogone">
+        <h1>git log --oneline</h1>
+        <img src="assets/img/git_log_ol.png" alt="">
+        <p>Condense each commit to a single line.</p>
+    </section>
+    <section id="gdiff">
+        <h1>git diff</h1>
+        <img src="assets/img/git_diff.png" alt="">
+        <p>Show unstaged changes between your index and working directory.</p>
+    </section>
+    <section id="gbranch">
+        <h1>git branch (name)</h1>
+        <img src="assets/img/git_branch.png" alt="">
+        <p>List all of the branches in your repo. Add a (name) argument to create a new branch with the name (name).</p>
+    </section>
+    <section id="gdelete">
+        <h1>git branch -d (name)</h1>
+        <img src="assets/img/git_branch_delete.png" alt="">
+        <p>Delete (name) branch</p>
+    </section>
+    <section id="gcheck">
+        <h1>git checkout (name)</h1>
+        <img src="assets/img/git_checkout.png" alt="">
+        <p>Check out a new branch named (name).</p>
+    </section>
+    <section id="gmerge">
+        <h1>git merge (name)</h1>
+        <img src="assets/img/git_merge.png" alt="">
+        <p>Merge (name) into the current branch.</p>
+        <img src="assets/img/git_merge_tips.png" alt="">
+    </section>
+    <section id="gpush">
+        <h1>git push (remote) (branch)</h1>
+        <img src="assets/img/git_push.png" alt="">
+        <p>Push the branch to (remote), along with necessary commits and objects. Creates named branch in the remote repo if it doesn’t exist.</p>
+    </section>
+    <section id="gpull">
+        <h1>git pull (remote)</h1>
+        <img src="assets/img/git_pull.png" alt="">
+        <p>Fetch the specified remote’s copy of current branch and immediately merge it into the local copy.</p>
     </section>
 </body>
 </html>

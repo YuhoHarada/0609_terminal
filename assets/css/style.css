@@ -9,36 +9,66 @@ body{
     font-family: Arial, Helvetica, sans-serif;
 }
 
-body>h1{
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+header h1{
     letter-spacing: 3px;
     padding-left: 10%;
 }
 
-nav{
-    background: #765D49;
+input{
+    display: none;
 }
 
-nav ul{
+label{
+    display: block;
+    cursor: pointer;
+    width: 100%;
+    background: #765D49;
+    color: #b6a291;
+    padding: 20px 5vw;
+    font-weight: bold;
+}
+
+label:hover{
+    color: lightpink;
+}
+
+input:checked+div{
+    display: block;
+}
+
+div{
+    background: #765D49;
+    display: none;
+}
+
+div ul{
     padding: 20px 10% 20px;
 }
 
-nav ul li{
+div ul li{
     display: inline-block;
     width: 200px;
 }
 
-nav ul li a{
+div ul li a{
     text-decoration: none;
     color: #b6a291;
 }
 
-nav ul li a:hover{
+div ul li a:hover{
     text-decoration: underline;
 }
 
 section{
     border-bottom: 1px solid #765D49;
-    padding: 100px 10%;
+    padding: 250px 10% 100px;
     text-align: center;
 }
 
@@ -48,7 +78,8 @@ section img{
     margin: 0 auto;
 }
 
-div{
+#toTop{
+    display: block;
     position: fixed;
     right: 0;
     bottom: 0;
